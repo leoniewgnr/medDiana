@@ -23,6 +23,8 @@ def handle_form_submission():
         ]
     )
 
+    print(completion)
+
     response = completion.choices[0].message.content
 
     # Example: Print the received form data
