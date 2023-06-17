@@ -1,10 +1,11 @@
 from flask import Flask, request
 import pandas as pd
+import os
 import openai
 
 app = Flask(__name__)
 
-openai.api_key = open('api/api_keys.txt', 'r').readline()
+openai.api_key = os.environ.get('API_URL')
 
 @app.route("/api/form", methods=["POST"])
 def handle_form_submission():
