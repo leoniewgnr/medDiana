@@ -1,8 +1,8 @@
 # Next.js build output
-.next/
+.next
 
 # Node.js modules
-node_modules/
+node_modules
 
 # Log files
 npm-debug.log*
